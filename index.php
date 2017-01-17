@@ -8,7 +8,7 @@
 
 <div class="container">
 
-    <form class="well form-horizontal" action="tpWordpress1/data/traitement.php" method="post"  id="contact_form">
+    <form class="well form-horizontal" action="tpWordpress1/traitement.php" method="post"  id="contact_form">
         <fieldset>
 
             <!-- Form Name -->
@@ -216,58 +216,52 @@
                     </div>
                 </div>
             </div>
-            <!-- Text input-->
-            <!--            <div class="form-group">-->
-            <!--                <label class="col-md-4 control-label">Website or domain name</label>-->
-            <!--                <div class="col-md-4 inputGroupContainer">-->
-            <!--                    <div class="input-group">-->
-            <!--                        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>-->
-            <!--                        <input name="website" placeholder="Website or domain name" class="form-control" type="text">-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <!---->
             <!-- radio checks -->
-            <!--            <div class="form-group">-->
-            <!--                <label class="col-md-4 control-label">Do you have hosting?</label>-->
-            <!--                <div class="col-md-4">-->
-            <!--                    <div class="radio">-->
-            <!--                        <label>-->
-            <!--                            <input type="radio" name="hosting" value="yes" /> Yes-->
-            <!--                        </label>-->
-            <!--                    </div>-->
-            <!--                    <div class="radio">-->
-            <!--                        <label>-->
-            <!--                            <input type="radio" name="hosting" value="no" /> No-->
-            <!--                        </label>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <!---->
+            <div class="form-group">
+                <label class="col-md-4 control-label">Choix des plugins</label>
+                <div class="col-md-4">
+                    <div class="custom-checkbox">
+                        <label>
+                            <input type="checkbox" name="wordfence" /> Wordfence
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="duplicator" /> duplicator
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="contactform7" /> contactform7
+                        </label>
+                    </div>
+                </div>
+            </div>
+<!---->
             <!-- Text area -->
-            <!---->
-            <!--            <div class="form-group">-->
-            <!--                <label class="col-md-4 control-label">Project Description</label>-->
-            <!--                <div class="col-md-4 inputGroupContainer">-->
-            <!--                    <div class="input-group">-->
-            <!--                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>-->
-            <!--                        <textarea class="form-control" name="comment" placeholder="Project Description"></textarea>-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <!---->
+<!---->
+<!--            <div class="form-group">-->
+<!--                <label class="col-md-4 control-label">Project Description</label>-->
+<!--                <div class="col-md-4 inputGroupContainer">-->
+<!--                    <div class="input-group">-->
+<!--                        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>-->
+<!--                        <textarea class="form-control" name="comment" placeholder="Project Description"></textarea>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
             <!-- Success message -->
-            <!--            <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>-->
-            <!---->
+<!--            <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>-->
+<!---->
             <!-- Button -->
-            <!--            <div class="form-group">-->
-            <!--                <label class="col-md-4 control-label"></label>-->
-            <!--                <div class="col-md-4">-->
-            <!--                    <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>-->
-            <!--                </div>-->
-            <!--            </div>-->
-            <!---->
-            <!--        </fieldset>-->
+            <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+                </div>
+            </div>
+
+        </fieldset>
     </form>
 </div>
 </div><!-- /.container -->
