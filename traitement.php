@@ -21,5 +21,4 @@ exec("wp db create " . $dbname);
 
 exec("wp core install --url=" . $url . " --title=" . $title . " --admin_user=root --admin_password=0000 --admin_email=" . $admin_email . " --skip-email ");
 
-header('Location: 192.168.33.10');
 ?>
