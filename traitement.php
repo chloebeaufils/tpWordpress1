@@ -21,4 +21,10 @@ exec("wp db create " . $dbname);
 
 exec("wp core install --url=" . $url . " --title=" . $title . " --admin_user=root --admin_password=0000 --admin_email=" . $admin_email . " --skip-email ");
 
+exec("wp plugin delete akismet");
+exec("wp theme delete twenty*");
+exec("wp plugin delete hello-dolly");
+exec("wp plugin delete akismet");
+
+exec("wp install activello --activate");
 ?>
