@@ -8,8 +8,10 @@ $title = $_POST["title"];
 $admin_user = $_POST["admin_user"];
 $admin_password = $_POST["admin_password"];
 $admin_email = $_POST["admin_email"];
+$contactform7 = $_POST["contactform7"];
+$duplicator = $_POST["duplicator"];
+$wordfence = $_POST["wordfence"];
 
-var_dump($NomSite);
 
 exec("curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar");
 exec("php wp-cli.phar --info");
@@ -27,4 +29,15 @@ exec("wp plugin delete hello-dolly");
 exec("wp plugin delete akismet");
 
 exec("wp install activello --activate");
+
+
+if ($contactform7 == 'on'){
+   exec("wp plugin install contact-form-7");
+}
+if ($duplicator == 'on'){
+    exec("wp plugin install Duplicator");
+}
+if ($wordfence == 'on'){
+    exec("wp plugin install Wordfence Security");
+}
 ?>
