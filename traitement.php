@@ -11,17 +11,15 @@ $admin_email = $_POST["admin_email"];
 
 var_dump($NomSite);
 
-exec("rm -R ".$NomSite);
+exec("curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar");
+exec("php wp-cli.phar --info");
+exec("chmod +x wp-cli.phar");
+exec("sudo mv wp-cli.phar /usr/local/bin/wp");
+exec("wp core download ");
+exec("wp core config --dbname=".$dbname." --dbuser=root --dbpass=0000 --locale=en_EN ");
+exec("wp db create " . $dbname);
 
-exec("mkdir ". $NomSite);
-exec("cd " . $NomSite . "/ && curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar");
-exec("cd " . $NomSite . "/ && php wp-cli.phar --info");
-exec("cd " . $NomSite . "/ && chmod +x wp-cli.phar");
-exec("cd " . $NomSite . "/ && sudo mv wp-cli.phar /usr/local/bin/wp");
-exec("cd " . $NomSite . "/ && wp core download ");
-exec("cd " . $NomSite . "/ && wp core config --dbname=".$dbname." --dbuser=root --dbpass=0000 --locale=en_EN ");
-exec("cd " . $NomSite . "/ && wp db create " . $dbname);
+exec("wp core install --url=" . $url . " --title=" . $title . " --admin_user=root --admin_password=0000 --admin_email=" . $admin_email . " --skip-email ");
 
-exec("cd " . $NomSite . "/ && wp core install --url=" . $url . " --title=" . $title . " --admin_user=root --admin_password=0000 --admin_email=" . $admin_email . " --skip-email ");
-
+header('Location: 192.168.33.10');
 ?>
