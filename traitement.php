@@ -32,12 +32,12 @@ exec("wp install activello --activate");
 
 
 if ($contactform7 == 'on'){
-   exec("wp plugin install contact-form-7");
+   exec("wp plugin install contact-form-7 --activate");
 }
 if ($duplicator == 'on'){
-    exec("wp plugin install Duplicator");
+    exec("wp plugin install Duplicator --activate");
 }
 if ($wordfence == 'on'){
-    exec("wp plugin install Wordfence Security");
+    exec("wp plugin install Wordfence Security --activate");
 }
 ?>
