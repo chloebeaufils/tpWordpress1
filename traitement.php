@@ -26,5 +26,5 @@ exec("wp theme delete twenty*");
 exec("wp plugin delete hello-dolly");
 exec("wp plugin delete akismet");
 
-exec("wp install activello --activate")
+exec("wp install activello --activate");
 ?>
