@@ -8,11 +8,11 @@
 
 <div class="container">
 
-    <form class="well form-horizontal" action="tpWordpress1/traitement.php" method="post"  id="contact_form">
+    <form class="well form-horizontal" action="traitement.php" method="post"  id="contact_form">
         <fieldset>
 
             <!-- Form Name -->
-            <h1>Créer un Wordpress</h1>
+            <h1>Créer un Wordpresssss</h1>
 
             <!-- Text input-->
 
@@ -152,70 +152,6 @@
             </div>
 
             <!-- Text input-->
-            <!-- Select Basic -->
-
-            <div class="form-group">
-                <label class="col-md-4 control-label">Plugins</label>
-                <div class="col-md-4 selectContainer">
-                    <div class="input-group">
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
-                        <select name="state" class="form-control selectpicker" >
-                            <option value=" " >Please select your state</option>
-                            <option>Alabama</option>
-                            <option>Alaska</option>
-                            <option >Arizona</option>
-                            <option >Arkansas</option>
-                            <option >California</option>
-                            <option >Colorado</option>
-                            <option >Connecticut</option>
-                            <option >Delaware</option>
-                            <option >District of Columbia</option>
-                            <option> Florida</option>
-                            <option >Georgia</option>
-                            <option >Hawaii</option>
-                            <option >daho</option>
-                            <option >Illinois</option>
-                            <option >Indiana</option>
-                            <option >Iowa</option>
-                            <option> Kansas</option>
-                            <option >Kentucky</option>
-                            <option >Louisiana</option>
-                            <option>Maine</option>
-                            <option >Maryland</option>
-                            <option> Mass</option>
-                            <option >Michigan</option>
-                            <option >Minnesota</option>
-                            <option>Mississippi</option>
-                            <option>Missouri</option>
-                            <option>Montana</option>
-                            <option>Nebraska</option>
-                            <option>Nevada</option>
-                            <option>New Hampshire</option>
-                            <option>New Jersey</option>
-                            <option>New Mexico</option>
-                            <option>New York</option>
-                            <option>North Carolina</option>
-                            <option>North Dakota</option>
-                            <option>Ohio</option>
-                            <option>Oklahoma</option>
-                            <option>Oregon</option>
-                            <option>Pennsylvania</option>
-                            <option>Rhode Island</option>
-                            <option>South Carolina</option>
-                            <option>South Dakota</option>
-                            <option>Tennessee</option>
-                            <option>Texas</option>
-                            <option> Uttah</option>
-                            <option>Vermont</option>
-                            <option>Virginia</option>
-                            <option >Washington</option>
-                            <option >West Virginia</option>
-                            <option>Wisconsin</option>
-                            <option >Wyoming</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
             <!-- radio checks -->
             <div class="form-group">
                 <label class="col-md-4 control-label">Choix des plugins</label>
@@ -233,6 +169,47 @@
                     <div class="checkbox">
                         <label>
                             <input type="checkbox" name="contactform7" /> contactform7
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="bbpress" /> bbpress
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="jetpack" /> Jetpack
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label">Choix des Themes à activer plus tard</label>
+                <div class="col-md-4">
+                    <div class="custom-radio">
+                        <label>
+                            <input type="checkbox" name="brigsby" /> brigsby
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="vantage" /> vantage
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="freak" /> freak
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="talon" /> talon
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="satellite" /> satellite
                         </label>
                     </div>
                 </div>
