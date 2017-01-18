@@ -12,7 +12,7 @@
         <fieldset>
 
             <!-- Form Name -->
-            <h1>Créer un Wordpresssss</h1>
+            <h1>Créer un Wordpres</h1>
 
             <!-- Text input-->
 
