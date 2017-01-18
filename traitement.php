@@ -53,26 +53,26 @@ if ($wordfence == 'on'){
     exec("wp plugin install Wordfence Security --activate");
 }
 if ($bbpress == 'on'){
-    exec("wp plugin install Wordfence Security --activate");
+    exec("wp plugin install bbpress --activate");
 }
 if ($jetpack == 'on'){
-    exec("wp plugin install Wordfence Security --activate");
+    exec("wp plugin install jetpack --activate");
 }
 
 
 if ($brigsby == 'on'){
-    exec("wp theme install brigsby");
+    exec("wp theme install brigsby --activate");
 }
 if ($vantage == 'on'){
-    exec("wp theme install vantage");
+    exec("wp theme install vantage --activate");
 }
 if ($freak == 'on'){
-    exec("wp theme install freak");
+    exec("wp theme install freak --activate");
 }
 if ($talon == 'on'){
-    exec("wp theme install talon");
+    exec("wp theme install talon --activate");
 }
 if ($satellite == 'on'){
-    exec("wp theme install satellite");
+    exec("wp theme install satellite --activate");
 }
 ?>
