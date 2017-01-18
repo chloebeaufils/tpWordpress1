@@ -4,5 +4,5 @@
 echo "Déplace les fichiers du git clone"
 echo "--------------------------------------------"
 
-cp -R ../../tpWordpress1/* ../../../html/
+cp -R tpWordpress1/* ../html/
 rm -R tpWordpress1/*
